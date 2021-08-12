@@ -7,7 +7,13 @@
 
 # Busca sequêncial funciona bem para as listas que estão desordenadas como números ou nomes colocados em ordens aleatórias.
 
+# Nùmero de comparações em uma lista de n elementos
+# Quando um elemento existe: pos + 1 comparações
+# Quando um elemento não existe: n comparações
+
 # importando lista de nomes
+
+from time import time
 from data.lista_nomes import nomes
 
 def busca_sequencial(lista, valor_busca):
@@ -117,9 +123,23 @@ print("------------------------------------------------------")
 print(f"Posição do nome DISNEY: {busca_sequencial(nomes, 'DISNEY')}")
 print(f"Posição do nome GABRIEL: {busca_sequencial(nomes, 'GABRIEL')}")
 print(f"Posição do nome FAUSTO: {busca_sequencial(nomes, 'FAUSTO')}")
+hora_ini = time()
 print(f"Posição do nome ZULEICA: {busca_sequencial(nomes, 'ZULEICA')}")
+hora_fim = time() 
+print(f"Tempo gasto procurando ZULEICA: {(hora_fim - hora_ini) * 1000}ms")
 
 busca = 'Orkutilson'
 # upper() coloca todas as letras em maiúsculo para realizar a busca
+hora_ini = time() 
+print(f"Posição de Fausto: {busca_sequencial(nomes, 'FAUSTO')}")
+hora_fim = time()
+
+print(f"Tempo gasto procurando Fausto: {(hora_fim - hora_ini) * 1000}ms")
 print(f"Posição do nome {busca.upper()}: {busca_sequencial(nomes, busca.upper())}")
 print(f"Número dae elementos da lista nomes: {len(nomes)}")
+
+
+hora_ini = time()
+print(f"Posição de BELERINA: {busca_sequencial(nomes, 'BELERINA')}")
+hora_fim = time()
+print(f"Tempo gasto procurando BELERINA: {(hora_fim - hora_ini) * 1000}ms")
