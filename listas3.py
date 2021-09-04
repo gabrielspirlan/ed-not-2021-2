@@ -1,41 +1,39 @@
-# Lista de Strings
+# Lista de strings
 frutas = ["laranja", "maçã", "uva", "pera", "mamão", "abacate", "amora"]
 
-# imprimendo apenas a fruta "uva"
+# Imprimindo apenas a fruta "uva"
 print(frutas[2])
 
 # Substituindo "pera" por "melão"
 frutas[3] = "melão"
-print(frutas[3])
+print(frutas)
 
-print('------------------------------------------------------')
-
-# descobrindo elementos da lista
+# Descobrindo quantos elementos há na lista
 print(len(frutas))
 
-print('------------------------------------------------------')
+print('--------------------------')
 
-# Percorrendo e imprimindo cada uim dos elementos da lista
+# Percorrendo e imprimindo cada um dos elementos da lista
 for fruta in frutas:
     print(fruta)
 
-
-print('------------------------------------------------------')
+print('--------------------------')
 
 # Percorrendo e imprimindo cada elemento e sua posição
 for i in range(len(frutas)):
     print(f"{frutas[i]} está na posição {i}")
 
-print('------------------------------------------------------')
+print('--------------------------')
 
-# Percurso em orrdem invertida
-# 1° argumento: len(frutas) - 1: a lista precisa começar no último elemento, que é determinado por len() - 1
-# 2° argumento: -1, porque o limite final não entra e precisamos terminar em 0
-# 3° argumento: para a lista percorrer de forma contrária, decaindo os números a cada passagem
-for j in range(len(frutas) -1, -1, -1):
+# Percurso em ordem invertida
+# 1º argumento: len(frutas) - 1: a lista precisa começar no último elemento, que é
+# determinado por len() - 1
+# 2º argumento: -1, porque o limite final não entra e precisamos terminar em 0
+# 3º argumento: -1, porque a lista precisa ser decrescente
+for j in range(len(frutas) - 1, -1, -1):
     print(frutas[j])
 
-print('------------------------------------------------------')
+print('--------------------------')
 
 # Ordenando o vetor em ordem alfabética
 frutas.sort()
