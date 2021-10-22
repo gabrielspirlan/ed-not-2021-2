@@ -16,13 +16,11 @@ print(pilha.to_str())
 
 # Retirar um elemento da pilha
 removido = pilha.pop()
-
 print(f"Removido: {removido}, pilha: {pilha.to_str()}")
 
 # Consultar o último elemento
 ultimo = pilha.peek()
 print(f"Último: {ultimo}, pilha: {pilha.to_str()}")
-
 
 # Esvaziar a pilha, elemento por elemento
 while not pilha.is_empty():
