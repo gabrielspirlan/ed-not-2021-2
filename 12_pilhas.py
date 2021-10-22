@@ -1,4 +1,4 @@
-git# Palíndromo: é um texto que, quando lido de trás para frente,
+# Palíndromo: é um texto que, quando lido de trás para frente,
 # mantém o mesmo conteúdo (desprezando acentos e espaçamento)
 # texto = "SOCORRAM-ME, SUBI NO ÔNIBUS EM MARROCOS"
 texto = "BATATINHA QUANDO NASCE ESPALHA RAMA PELO CHÃO"
